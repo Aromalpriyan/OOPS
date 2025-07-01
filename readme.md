@@ -18,6 +18,7 @@
 ### <p>3. Member Variables && Member Methods<p>
 #### <p>Members are items or parts that are inside of a class.<p>
 ## <p>Examples<p>
+### <p>1.Class/Objects<p>
 #### Class_BluePrint
 ```
 public class SmartDevice {
@@ -44,7 +45,7 @@ public class SmartDevice {
     }
 }
 ```
-#### Main_Objects
+#### Main2_Objects
 ```
 public class Main2 {
     public static void main(String[] args) {
@@ -55,6 +56,44 @@ public class Main2 {
         mobile.connect();
         mobile.displayStatus();
 
+    }
+}
+```
+### <p>2. Class/Objects/Constructor
+#### Class_BluePrint
+```
+public class SmartWatch {
+// properties
+    String brand;
+    String model;
+    int price = 2599;
+    boolean isDigital=false;
+
+    public SmartWatch(String myBrand, String myModel){
+        System.out.println("New watch has been created");
+        brand = myBrand;
+        model = myModel;
+    }
+
+    void productInfo(){
+        System.out.println("brand: " + brand);
+        System.out.println("model: " + model);
+        System.out.println("price: " + price);
+        System.out.println("isDigital: " + isDigital);
+    }
+        
+}
+```
+#### Main_Objects/Constructor
+```
+public class Main {
+    public static void main(String[] args) {
+        
+        SmartWatch watch1 = new SmartWatch("boat", "boat nirvana701");
+        watch1.productInfo();
+
+        SmartWatch watch2 = new SmartWatch("boult", "boult 805c");
+        watch2.productInfo();
     }
 }
 ```
